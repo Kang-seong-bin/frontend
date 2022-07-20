@@ -3,3 +3,32 @@
      font-family:'Gamja Flower', cursive;
     font-size:medium;
  }
+ 
+table{
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+}
+td{
+    padding: 5px;
+    
+}
+
+button{
+    padding: 7px 15px;
+    margin: 7px;
+    background-color: rgb(194, 14, 104);
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+tr:last-child > td{
+    background-color: white;
+    text-align: center;
+}
+
+
