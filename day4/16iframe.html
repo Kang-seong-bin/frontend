@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day4_iframe</title>
+<style>
+    iframe{
+        width: 45%;
+        height: 600px;
+    
+    }
+/* iframe은 인라인 블록이라 생각하면된다.
+ 순수 인라인에서 넣어줄 수 없는 width와 height를 넣어줄 수 있기 때문이다. */
+</style>
+</head>
+<body>
+    <!-- iframe은 inline frame : 현재 문서에 다른 문서를 포함시킵니다.
+    포함시킬문서의 url(http주소, 파일명)은 src속성으로 설정 -->
+    <h4>13form.html문서 담기</h4>
+    <!-- root 경로(http://127.0.0.1:5501/) 바로 아래에 있는 폴더 day3 지정
+         파일열기로 했을 때는 동작하지 않고 라이브서버로 열어야지 동작 -->
+    <iframe src="/day3/13form.html" frameborder="0"></iframe>
+    <!-- 한단계 상위폴더 이동 후 day3 폴더 -->
+    <iframe src="../day3/13form.html" frameborder="0"></iframe>
+    <h4>공유링크 퍼오기</h4>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1018318272554!2d127.0267309156288!3d37.50551633537744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3e349c7478b%3A0xfd1e8d6c65378a98!2z64W467O07YWUIOyVsOuwsOyEnOuNlCDshJzsmrgg6rCV64Ko!5e0!3m2!1sko!2skr!4v1658364699466!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0JclfyCJiww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h4>url 직접 지정</h4>
+    <!-- 대부분 주요 서비스 url은 보안상 위협이 될 수 있기 때문에 우리의 요청을 거부합니다. -->
+    <iframe src="https://www.w3schools.com/css/css_link.asp" frameborder="0"></iframe>
+    
+    <iframe src="http://itgn.cafe24.com" frameborder="0"></iframe>
+
+
+
+</body>
+<!-- 
+      //화면에서 안보입니다.
+    p.ex1 {dispaly: none;}
+    //블록요소를 인라인으로 변환
+    p.ex2 {display: inline;}
+    //인라인 요소를 블록으로 변환
+    p.ex3 {display: block;}
+    //인라인 요소이지만 블록모델처럼 너비, 높이를 지정
+    p.ex4 {display: inline-block;}
+
+    h1.hidden{
+        dispaly: none;
+    }
+    h1.hidden{
+        visib: none;
+    }
+
+
+ -->
+</html>
